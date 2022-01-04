@@ -4,12 +4,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .all {
   background-color: white;
   width: 100%;
-  border: solid black 3px;
+/*border: solid black 3px;*/
 }
 
 body {
@@ -17,9 +18,12 @@ body {
 }
 
 header {
-  position: relative;
   z-index: 70;
   height: 20%;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  background-color: #ccffcc;
 }
 
 .logo {
@@ -40,7 +44,7 @@ header {
 }
 
 .container {
-  border: solid red 2px;
+/*border: solid red 2px;*/
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -87,7 +91,6 @@ a {
 }
 
 .left {
-  border: 5px solid blue;
 
   text-align: center;
   justify-content: center;
@@ -121,7 +124,7 @@ a {
 
 
 .big_img {
-  border: 3px solid gold;
+/*border: 3px solid gold;*/
   object-fit: cover;
   height: 100%;
   width: 100%;
@@ -131,7 +134,7 @@ a {
 /* START OF 2ND PAGE */
 
 .leftIMG{
-  border: 5px solid green;
+/*border: 5px solid green;*/
   height: 100%;
   width: 100%;
   align-items: flex-start;
@@ -142,7 +145,7 @@ a {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 55%;
+  width: 50%;
   padding: 0 5rem;
 }
 
@@ -173,12 +176,21 @@ a {
 @media screen and (min-width: 961px) and (max-width: 1024px) {/* tablet, landscape iPad, lo-res laptops ands desktops */
 
 .big-title, .text, .left div {
-    text-align: center;
-    line-height: 200%;
-    height: 5rem;
+    text-align: left;
+    padding-left: 2rem;
+    line-height: 180%;
+    height: 14rem;
     white-space: normal;
     word-wrap: break-word;
+    font-size: 1.3rem;
   }
+
+.left, .h1, .p{
+    text-align: center;
+    line-height: 320%;
+    font-size: 1.3rem;
+    padding-right: 5rem;
+  } 
 
 }
 
@@ -189,23 +201,15 @@ a {
     grid-template-columns: repeat(1 1fr);
     grid-template-rows: 100vh 100vh;
     grid-gap: 1rem;
-    border: solid red 2px;
+  /*border: solid red 2px;*/
     height: 100vh;
     justify-content: center;
     align-items: center;
   }
 
-/*
-.big_img {
-    height: 100%; 
-    width: 100%;
-   
-  }
-*/
 .right{
     justify-content: center;
     align-items: center;
-    border: 2px solid gold;
     width: 100%;
   }  
 
@@ -219,11 +223,15 @@ a {
   }
 
 .big-title, .text, .left div {
-    margin: 3rem 4rem;
+    padding-right: 30px;
+    margin: 2rem -1.5rem;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     line-height: 200%;
     height: 15rem;
     white-space: normal;
+    font-size: 1.5rem;
   } 
 
   /* 2nd PART of the PAGE */
@@ -255,6 +263,11 @@ word-wrap: break-word;
   white-space: normal;
   }
 
+.left, .h1, .p{
+  line-height: 400%;
+  font-size: 1.5rem;
+}
+
 } 
 
 @media screen and (min-width: 481px) and (max-width: 640px) {/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
@@ -264,19 +277,12 @@ word-wrap: break-word;
     grid-template-columns: repeat(1 1fr);
     grid-template-rows: 100vh 100vh;
     grid-gap: 1rem;
-    border: solid red 2px;
+  /*border: solid red 2px;*/
     height: 100vh;
     justify-content: center;
     align-items: center;
   }
 
-/*
-.big_img {
-    height: 100%; 
-    width: 100%;
-   
-  }
-*/
 .right{
     justify-content: center;
     align-items: center;
@@ -339,19 +345,12 @@ word-wrap: break-word;
     grid-template-columns: repeat(1 1fr);
     grid-template-rows: 100vh 100vh;
     grid-gap: 1rem;
-    border: solid red 2px;
+  /*border: solid red 2px;*/
     height: 100vh;
     justify-content: center;
     align-items: center;
   }
 
-/*
-.big_img {
-    height: 100%; 
-    width: 100%;
-   
-  }
-*/
 .right{
     justify-content: center;
     align-items: center;
@@ -369,10 +368,13 @@ word-wrap: break-word;
   }
 
 .big-title, .text, .left div {
-    margin: 3rem 4rem;
+    padding-right: 30px;
+    margin: 2rem -1.5rem;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     line-height: 200%;
-    height: 15rem;
+    height: 12rem;
     white-space: normal;
   } 
 
@@ -409,10 +411,10 @@ word-wrap: break-word;
 
 @media screen and (min-width: 320px) and (max-width: 480px) {/* smartphones, iPhone, portrait 480x320 phones */
 
+
 }
 
 @media screen and (max-width: 319px) {/*symbian phones LOL */
 
-}
 }
 /* XD */
